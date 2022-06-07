@@ -1,0 +1,50 @@
+header {
+    text-align: center;
+}
+
+section {
+    margin: auto;
+    width: 400px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+    background-color: rgba(223, 223, 28, 0.685);
+    height: 350px;
+    font: normal Arial 20pt;
+}
+
+.but {
+    padding-top: 5px;
+}
+
+.nome {
+    padding-bottom: 5px;
+}
+
+.alt {
+    padding-bottom: 5px;
+}
+
+.img {
+    width: 250px;
+    padding-top: 10px;
+}
+
+footer {
+    text-align: center;
+    font: normal 15pt Arial;
+}
+
+.res {
+    text-align: center;
+    padding-top: 60px;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.323);
+    font: normal Arial 20pt;
+}
+
+.teste {
+    padding-top: 15px;
+}
