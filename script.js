@@ -1,10 +1,10 @@
 function calcular() {
     let nome = document.getElementById("nome").value
-    let alt = document.getElementById("alt").value
-    let peso = document.getElementById("peso").value
+    let alt = document.getElementById("alt").value.replace(",",".")
+    let peso = document.getElementById("peso").value.replace(",",".")
     let imc = Number((peso/(alt*alt)).toFixed(2))
     let res = document.getElementById("res")
-    if (alt === ""){
+    if (alt === "" || peso === ""){
         window.alert('Preencha os dados corretamente!')
     } else {
         if (imc<18.5) {
@@ -18,9 +18,10 @@ function calcular() {
         } else {
             res.innerHTML = `<b>Procure um médico ${nome}, seu IMC é de ${imc} e está na classificação de obesidade grave</b>`
         }
+        let teste = document.getElementById("teste")
+        let image = document.createElement("img")
+        image.src = "teste.jpg"
+        teste.appendChild(image)
     }
-    let teste = document.getElementById("teste")
-    let image = document.createElement("img")
-    image.src = "teste.jpg"
-    teste.appendChild(image)
-}
+    }
+   
